@@ -45,3 +45,9 @@ class PredatoryCreditCard(CreditCard):
 
         super().__init__(customer, bank, account, limit)
         self._apr = apr
+
+    def charge(self, price):
+        success = super().charge(price)
+        if not success:
+            self._balance += 5
+        return success

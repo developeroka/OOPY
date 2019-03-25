@@ -34,7 +34,7 @@ class Range:
 
     def __str__(self):
 
-        self._list = [self.__getitem__(i) for i in range(0, self._length)]
+        self._list = [self.__getitem__(i) for i in range(self._start, self._length)]
 
         return '(' + str(self._list) + ')'
 

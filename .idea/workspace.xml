@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d19c2b2-0326-47ae-9d45-4de3b921e637" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Range.py" beforeDir="false" afterPath="$PROJECT_DIR$/Range.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/mypy$Range.coverage" NAME="Range Coverage Results" MODIFIED="1553513018512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mypy$Range.coverage" NAME="Range Coverage Results" MODIFIED="1553515257584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -28,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Range.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+            <state relative-caret-position="333">
+              <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -54,9 +53,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="683" />
-    <option name="y" value="25" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="258" />
+    <option name="y" value="176" />
     <option name="width" value="683" />
     <option name="height" value="743" />
   </component>
@@ -139,7 +138,7 @@
       <updated>1553455871253</updated>
       <workItem from="1553455878094" duration="1046000" />
       <workItem from="1553461591556" duration="654000" />
-      <workItem from="1553504346922" duration="4502000" />
+      <workItem from="1553504346922" duration="6491000" />
     </task>
     <task id="LOCAL-00001" summary="Create class with its constructor">
       <created>1553456532576</created>
@@ -162,14 +161,21 @@
       <option name="project" value="LOCAL" />
       <updated>1553506602017</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Testing class">
+      <created>1553513176815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553513176815</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6202000" />
+    <option name="totallyTimeSpent" value="8191000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="25" width="683" height="743" extended-state="0" />
+    <frame x="258" y="176" width="683" height="743" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.31220284" />
@@ -202,7 +208,8 @@
     <MESSAGE value="Create class with its constructor" />
     <MESSAGE value="Create Range class and initialize it" />
     <MESSAGE value="implement len() and getitem() special methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement len() and getitem() special methods" />
+    <MESSAGE value="Testing class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SequenceIterator.py">
@@ -214,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Range.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        <state relative-caret-position="333">
+          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
         </state>
       </provider>
     </entry>

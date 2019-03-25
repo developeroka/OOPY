@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d19c2b2-0326-47ae-9d45-4de3b921e637" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Progression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CredirCard.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreditCard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Progression.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Progression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+            <state relative-caret-position="407">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -173,7 +172,7 @@
       <updated>1553455871253</updated>
       <workItem from="1553455878094" duration="1046000" />
       <workItem from="1553461591556" duration="654000" />
-      <workItem from="1553504346922" duration="11602000" />
+      <workItem from="1553504346922" duration="12798000" />
     </task>
     <task id="LOCAL-00001" summary="Create class with its constructor">
       <created>1553456532576</created>
@@ -238,11 +237,25 @@
       <option name="project" value="LOCAL" />
       <updated>1553522872674</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="write Progression super class">
+      <created>1553525748104</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1553525748104</updated>
+    </task>
+    <task id="LOCAL-00011" summary="inherit Arithmetic Progression from progression super class">
+      <created>1553526904805</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1553526904805</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13302000" />
+    <option name="totallyTimeSpent" value="14498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="25" width="1372" height="746" extended-state="6" />
@@ -294,7 +307,9 @@
     <MESSAGE value="write child class (PredatoryCreditCard) for CreditCard&#10;and initialize it" />
     <MESSAGE value="override the charge method from parent class" />
     <MESSAGE value="have no idea of what i've done &#10;but that's a financial thing bankers know it better" />
-    <option name="LAST_COMMIT_MESSAGE" value="have no idea of what i've done &#10;but that's a financial thing bankers know it better" />
+    <MESSAGE value="write Progression super class" />
+    <MESSAGE value="inherit Arithmetic Progression from progression super class" />
+    <option name="LAST_COMMIT_MESSAGE" value="inherit Arithmetic Progression from progression super class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SequenceIterator.py">
@@ -333,8 +348,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Progression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        <state relative-caret-position="407">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>

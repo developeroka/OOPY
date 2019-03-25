@@ -37,3 +37,11 @@ class CreditCard:
         else:
             self._balance += price
             return True
+
+
+class PredatoryCreditCard(CreditCard):
+
+    def __init__(self, customer, bank, account, limit, apr):
+
+        super().__init__(customer, bank, account, limit)
+        self._apr = apr

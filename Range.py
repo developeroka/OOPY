@@ -32,4 +32,12 @@ class Range:
 
         return self._start + item * self._step
 
+    def __str__(self):
 
+        self._list = [self.__getitem__(i) for i in range(0, self._length)]
+
+        return '(' + str(self._list) + ')'
+
+
+if __name__ == '__main__':
+    print(Range(1, 112, 5))

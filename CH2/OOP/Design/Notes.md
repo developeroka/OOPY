@@ -37,3 +37,10 @@
 2. Freedom to implement details of components without concern that other programmer will write code that depends on those details
 3. Yields robustness and adaptability because it allows implementation details of parts of the program to change without affecting other parts, thus making it easier to fix bugs or add new functionality with local changes to a component.
 4. Python provides loose support for encapsulation (`_var` is assumed non-public)
+
+# Design Patterns
+
+1. Solution to typical software design problems
+2. Tamplate to be applied in many different situations
+3. Consists of a **name**, **context** or *scenarios* to be applied, **template** or *how* the pattern is applied, and **result** or *analysis of output* produced.
+4. Its divided into two groups: algorithm deign problems and software engineering problems.

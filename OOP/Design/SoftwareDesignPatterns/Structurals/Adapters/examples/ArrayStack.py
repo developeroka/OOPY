@@ -30,7 +30,24 @@ class ArrayStack:
         else:
             return self._data.pop()
 
+    def __str__(self):
+
+        return str(self._data[0:len(self._data) + 1])
+
 
 class Empty(Exception):
     """Error attempting to access an element from an empty container."""
     pass
+
+
+if __name__ == '__main__':
+
+    stack = ArrayStack()
+    stack.push(5)
+    print(stack)
+    stack.push(3)
+    stack.push(4)
+    stack.pop()
+    print(stack.top())
+    stack.pop()
+    print(stack.is_empty())

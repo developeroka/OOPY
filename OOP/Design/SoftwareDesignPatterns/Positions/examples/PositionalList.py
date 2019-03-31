@@ -71,3 +71,14 @@ class PositionalList(_DoublyLinkedBase):
             """Return True if other does not represent the same location."""
             return not (self == other)                       # opposite of eq
 
+    # ------------------------------- utility method -------------------------------
+
+    def validate(self, p):
+        """Return position s node, or raise appropriate error if invalid."""
+        if not isinstance(p, self.Position):
+            raise TypeError('p must be proper Position type')
+        if p._container is not self:
+            raise ValueError('p does not belong to this container')
+        if p._node._next is None:   # convention for deprecated nodes
+            raise ValueError('p is no longer valid')
+        return p._node

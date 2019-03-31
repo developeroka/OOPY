@@ -46,7 +46,12 @@ An element is stored at each position, and positions satisfy parent-child relati
 |`T.is_root()`|Return position of the root of tree `T`, or `None` if `T` is empty
 |`T.parent(p)`|Return position of parent of position `p`, or `None` if `p` is the root of `T`
 |`T.num children(p)`|Return number of children of position `p`
-
+|`T.children(p)`|Generate an iteration of the children of position `p`
+|`T.is_leaf(p)`|Return `True` if position `p` does not have any children
+|`len(T)`|Return number of positions (and hence elements) that are contained in tree `T`
+|`T.is empty( )`|Return `True` if tree `T` doesn't contain any positions
+|`T.positions()`|Generate an iteration of all *positions* of tree `T`
+|`iter(T)`|Generate an iteration of all *elements* stored within tree `T`
 
 Notes:
 
@@ -54,8 +59,6 @@ Notes:
 * the first element of a positional list can be determined with `L.first().element()`
 * advantage of receiving a position is we can use position to navigate list
 
-
-
 ### Example Code 
 
-Please refer to [DoublyLinkedList.py]() and [Tree.py]() for an implementation of a `PositionalList` class using a doubly link list wherein each method runs in worst-case O(1).
+Please refer to [DoublyLinkedList.py]() and [Tree.py](https://github.com/developeroka/HiPy/blob/development/OOP/Design/SoftwareDesignPatterns/Positions/examples/Tree.py) for an implementation of a `PositionalList` class using a doubly link list wherein each method runs in worst-case O(1).

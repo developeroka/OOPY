@@ -118,3 +118,44 @@ class PositionalList(_DoublyLinkedBase):
         while cursor is not None:
             yield cursor.element()
             cursor = self.after(cursor)
+
+    # ------------------------------- mutators -------------------------------
+    # override inherited version to return Position, rather than Node
+
+    def _insert_between(self, e, predecessor, successor):
+        """Add element between existing nodes and return new Position."""
+        node = super()._insert_between(e, predecessor, successor)
+        return self._make_position(node)
+
+    def add_first(self, e):
+        """Insert element e at the front of the list and return new Position"""
+        return self._insert_between(e, self._header, self._header._next)
+
+    def add_last(self, e):
+        """Insert element e at the back of the list and return new Position."""
+        return self._insert_between(e, self._trailer._prev, self._trailer)
+
+    def add_before(self, p, e):
+        """Insert element e into list before Position p and return new Position."""
+        original = self._validate(p)
+        return self._insert_between(e, original. prev, original)
+
+    def add_after(self, p, e):
+        """Insert element e into list after Position p and return new Position."""
+        original = self._validate(p)
+        return self._insert_between(e, original, original._next)
+
+    def delete(self, p):
+        """Remove and return the element at Position p."""
+        original = self._validate(p)
+        return self._delete_node(original)          # inherited method returns element
+
+    def replace(self, p, e):
+        """Replace the element at Position p with e.
+
+        Return the element formerly at Position p.
+        """
+        original = self._validate(p)
+        old_value = original._element               # temporarily store old element
+        original._element = e                       # replace with new element
+        return old_value                            # return the old element value

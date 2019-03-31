@@ -91,3 +91,30 @@ class PositionalList(_DoublyLinkedBase):
             return None                                                        # boundary violation
         else:
             return self.Position(self, node)                                   # legitimate position
+
+    # ------------------------------- accessors -------------------------------
+
+    def first(self):
+        """Return the first Position in the list (or None if list is empty)."""
+        return self._make_position(self._header._next)
+
+    def last(self):
+        """Return the last Position in the list (or None if list is empty)."""
+        return self._make_position(self._trailer._prev)
+
+    def before(self, p):
+        """Return the Position just before Position p (or None if p is first)."""
+        node = self. validate(p)
+        return self._make_position(node._prev)
+
+    def after(self, p):
+        """Return the Position just after Position p (or None if p is last)."""
+        node = self. validate(p)
+        return self._make_position(node._next)
+
+    def iter(self):
+        """Generate a forward iteration of the elements of the list."""
+        cursor = self.first()
+        while cursor is not None:
+            yield cursor.element()
+            cursor = self.after(cursor)

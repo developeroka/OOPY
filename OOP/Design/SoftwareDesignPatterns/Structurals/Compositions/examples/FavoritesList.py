@@ -1,5 +1,6 @@
 from OOP.Design.SoftwareDesignPatterns.Positions.examples import PositionalList
 
+
 class FavoritesList:
     """List of elements ordered from most frequently accessed to least."""
 

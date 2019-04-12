@@ -1,4 +1,4 @@
-# Data Structures and Algorithms in Python
+# Software engineering fundamentals
 
 ## About
 

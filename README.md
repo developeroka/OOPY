@@ -4,8 +4,10 @@
 
 we are working on sofware engineering fundamentals in python by using the implementations as reference and applied theory such as: 
 
+# O
 Algorithms
 
+# O
 Data Structures
 
 OOP Concepts

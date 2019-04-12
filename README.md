@@ -1,4 +1,4 @@
-# Software engineering fundamentals
+# Software engineering fundamentals in python
 
 ## About
 

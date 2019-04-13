@@ -1,46 +1,20 @@
-# OOP Design Goals
+# The Composition Pattern
 
-## Robustness
+According to a StackOverflow post [here](https://stackoverflow.com/questions/9071067/design-patterns-composite-vs-composition#9071207), the following should be noted: 
+* Composition is really a design concept and not really a design pattern
+* Should not be confused with the Composite pattern
+* Implies **strong ownership** (manages the lifecycle of another object)
+* Should not be confused with aggregation (that does not imply ownership).
+* Occurs often in Composition over Inheritance discussions
 
-* Having the right output for anticipated inputs.
-* Able to handle unexpected inputs not explicitly defined for its application.
+## Context
 
-## Adaptability
+When a single object is needed to contain other objects, i.e. a priority queue that needs to keep track of an element and its key, even as items are relocated.
 
-* Able to evolve over time in response to changing conditions in its environment.
-* Ability of software to run with minimal change on different hardware and OS platform.
+## Template
 
-## Reusability
+In a priority queue, composition is used to store items internally as *key*, *value* pairs.
 
-* Same code should be usable as a component of different systems in various applications
+## Result
 
-# OOP Design Goals Facilitators
-
-## Modularity
-
-1. Different components must interact correctly
-2. Different components must be well organized
-3. Different components are divided into separate functional units
-4. Collection of closely related functions and classed defined together in a single file
-5. Support Robustness; it's easier to test & debug separate components before integration
-6. Structure imposed by modularity helps enable software reusability
-
-## Abstraction
-
-1. Distill to fundamental parts
-2. Involves naming and explaining functionality
-3. Abstract Data Types (ADT) is a mathematical model of a Data Structure that specifies the data stores, the operations supported and types of parameters of operations; **specifies what** each operation does **but not how**.
-
-## Encapsulation
-
-1. Components shouldn't reveal internal details of implementation
-2. Freedom to implement details of components without concern that other programmer will write code that depends on those details
-3. Yields robustness and adaptability because it allows implementation details of parts of the program to change without affecting other parts, thus making it easier to fix bugs or add new functionality with local changes to a component.
-4. Python provides loose support for encapsulation (`_var` is assumed non-public)
-
-# Design Patterns
-
-1. Solution to typical software design problems
-2. Tamplate to be applied in many different situations
-3. Consists of a **name**, **context** or *scenarios* to be applied, **template** or *how* the pattern is applied, and **result** or *analysis of output* produced.
-4. Its divided into two groups: algorithm deign problems and software engineering problems.
+Implementing the composition concept, in a priority queue context, a `PriorityQueueBase` base class is created that includes a nested class `_Item` that is used to store *key*, *value* pairs for all item instances. Please refer to the [examples](https://github.com/developeroka/HiPy/tree/master/OOP/Design/SoftwareDesignPatterns/Structurals/Compositions/examples).

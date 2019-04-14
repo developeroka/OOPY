@@ -4,11 +4,16 @@
 
 ## Context
 
-The template pattern is used to provide a framework for the reuse and adaptation of generic behavior that can be *specialized* for a particular implementation by defining or redefining (overriding) some of its methods.
+The template pattern is used to provide the framework or skeleton of an algorithm in a superclass, but allowing for the specialization of a set of specific steps, methods or behaviors, therefore fostering code reuse and the adaptability of generic behavior, without changing its structure.
 
 ## Template (how)
 
-By using [Abstract Base Classes](https://docs.python.org/3/glossary.html#term-abstract-base-class),  we declare`ABCMeta` of the `abc` [module](https://docs.python.org/3/library/abc.html#module-abc) as a metaclass on our class to assure that the constructor of the subclass raises an error if it does not provide a concrete implementation of all desired core behaviors labeled with the @abstractmethod decorator. This enforces the notion or idea of a *template* to be followed by any class that inherits from it:
+A series of steps are broken down into methods, some of which may be: 
+
+* *abstract*, which would have to be obligatorily defined by a subclass; and/or 
+* *instance methods*, which have a default implementation and which *may or may not be* overridden by a subclass.
+
+By using [Abstract Base Classes](https://docs.python.org/3/glossary.html#term-abstract-base-class),  we declare`ABCMeta` of the `abc` [module](https://docs.python.org/3/library/abc.html#module-abc) as a metaclass on our class to assure that the constructor of the subclass raises an error if it does not provide a concrete implementation of all desired core behaviors labeled with the `@abstractmethod` decorator. This enforces the notion or idea of a *template* to be followed by any class that inherits from it:
 
 ```python
 from abc import ABCMeta
@@ -17,6 +22,9 @@ class MyTemplate(metaclass=ABCMeta):
     @abstractmethod
     def my_core_behavior_to_be_implemented(self):
         raise NotImplemented
+    
+    def default_behavior(self):
+        print("This method may be overriden by a subclass.")
 ```
 
 ## Result (output)

@@ -1,8 +1,8 @@
-# Software engineering fundamentals in python
+# Software Engineering Fundamentals in Python
 
 ## About
 
-we are working on sofware engineering fundamentals in python by using the implementations as reference and applied theory such as: 
+We are working on Software Engineering Fundamentals in Python by using the implementations as reference and applied theory such as: 
 
 - [ ] Algorithms
 
@@ -10,18 +10,18 @@ we are working on sofware engineering fundamentals in python by using the implem
 
 - [x] OOP Concepts
 
-- [ ] Important design patterns in python
+- [ ] Important Design Patterns in Python
 
 
-in addition, code, exercises and notes are from differente recourses like:
+Furthermore, all of the material contained herein (code, exercises and notes) are from different resources, like:
 
-- Data structures and algorithms in python (by goodrich)
+- Data Structures and Algorithms in Python (by Michael T. Goodrich)
 
-- Dive into Design Patterns ()
+- Dive into Design Patterns (by Alexander Shvets)
 
-- CLRS (MIT university)
+- Introduction to Algorithms (CLRS - The MIT Press)
 
 
-By the way, till the end of our journey these contents and resources may change :) 
+By the way, note that till the end of our journey these contents and resources may change :) 
 
 
